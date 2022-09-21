@@ -1,7 +1,7 @@
 
 function getWeather(chosenCity){
     const apiKey = config.weather_key;
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + chosenCity + '&units=metric&appid=' + apiKey)
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + chosenCity + '&units=metric&appid='+ apiKey)
         .then((res) => res.json())
             .then((data) => (displayWeather(data)));
 }
