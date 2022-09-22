@@ -1,0 +1,38 @@
+@media screen and (max-width: 1090px) {
+
+    .content-outsidebox{
+        position: relative;
+        border-radius: 16px;
+        height: 70%;
+        width: 380px;
+        background-color: rgba(0, 0, 0, 0.396);
+        box-shadow: 10px -8px 5px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .content-insidebox{
+        font-size: 20px;
+    }
+    .cityI{
+        font-size: 20px;
+    }
+    .move-pos-h3{
+        top: -30px;
+    }
+    
+}
+  @media screen and (max-width: 1090px) {
+
+    .fun-fact-content{
+        font-size: 30px;
+
+    }
+
+    .fact-background{
+    }
+
+    .the-fact{
+        font-size: 50px;
+    }
+  }
