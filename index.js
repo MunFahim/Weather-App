@@ -1,5 +1,6 @@
-
 function getWeather(chosenCity){
+
+    // apiKey = 'your API Key';
     const apiKey = config.weather_key;
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + chosenCity + '&units=metric&appid='+ apiKey)
         .then((res) => res.json())
@@ -10,21 +11,21 @@ function getFunFact(){
     const limit = 1;
     fetch('https://api.api-ninjas.com/v1/facts?limit=' + limit, {
         method: 'GET',
+        // headers: { 'X-Api-Key': 'you API Key'},
         headers: { 'X-Api-Key': config.facts_key},
     })
     .then((res) => res.json())
-            .then((data) => (displayFact(data)));
+            .then((info) => (displayFact(info)));
 }
 
-function displayFact(data){
-    const fact = data[0].fact;
+function displayFact(info){
+    const fact = info[0].fact;
     console.log(fact);
+    document.getElementById("p1").innerHTML = fact;
 }
-
 
 
 function displayWeather(data){
-
 
     const cityName = data.name;
     const temperature = data.main.temp;
@@ -48,13 +49,19 @@ function displayWeather(data){
 } 
 
 function getCity(){
+    
     const chosenCity = document.getElementById("city-inputted").value;
+    document.getElementById("city-inputted").value = '';
     getWeather(chosenCity);
     getFunFact();
-    document.getElementById("city-inputted").value = '';
-
 }
 
 function example(){
-    getWeather("denver");
+    getWeather("Chicago");
+    getFunFact();
+}
+
+function onEnter(e){
+    e.preventDefault(); 
+    getCity();
 }
