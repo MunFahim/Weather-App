@@ -7,27 +7,43 @@
     <script type='text/javascript' src='.ignore/config.js'></script>
     <script src="index.js" type="text/javascript" language="javascript" ></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen" href="indexResize.css">
     <title>Document</title>
 </head>
 <body onload="example()">
+
+    <img src="background-images/view.jpg" class="back-img">
+
+    <div class="Container">
     <div class="main">
         <div class="content-outsidebox">
             <div class="content-insidebox">
                 <h1 id="city">YOUR CITY</h1>
+                <div class="move-pos-h3">
                 <h2 id="temp" >Temp: </h2>
                 <h3 id ="descrip">...</h3>
                 <h3 id="humid">Humidity: </h3>
                 <img id="wIcon" class="weatherIcon" src="">
+                </div>
             </div>
         </div>
     </div>
 
         <div>
-            <form class="formPos">
-                <input class="cityI" type="text" id="city-inputted" placeholder="Enter here">
+            <form class="formPos" onsubmit="onEnter(event)">
+                <input class="cityI" type="text" id="city-inputted" placeholder="Enter City here">
                 <button type="button" onclick="getCity()" class="sub-btn">Submit</button>
             </form>
+        </div> 
+        <div class="fact-background">
+            <div class="fun-fact-content">
+                <h3 class="the-fact">Fun Fact</h3>
+                <hr class="fact-hr">
+                <div>
+                    <p class="the-fact-statement" id="p1">There are 365 days in one year, which means you are the biggest person i know</p>
+                </div>
+            <div>
         </div>
-    <div> 
+    </div>
 </body>
 </html>
