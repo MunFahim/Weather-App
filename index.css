@@ -2,72 +2,118 @@ body{
     background-color: rgb(189, 194, 202);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700px;
-    background-image: url(background-images/nature.jpg);
+    /*background-image: url(background-images/nature.jpg);*/
+}
+.back-img{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .main{
-    margin-top: 70px;
-    margin-left: 20px;
+    margin-top: auto;
+    margin-left: auto;
 }
 h1{
     font-size: 100px;
 }
-.content-outsidebox{
-    background-color: transparent;
+.move-pos-h3{
     position: relative;
-    font-size: 35px;
-    
+    top: -40px;
+}
+.content-outsidebox{
+    position: relative;
     border-radius: 16px;
-    height: 600px;
-    width: 1600px;
-    
-    
+    height: 70%;
+    margin-left: 1%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.692);
+    box-shadow: 10px -8px 5px;
     
 }
+
 .content-insidebox{
+    position: relative;
     color: rgb(255, 255, 255);
     text-align: left;
-    margin-left: 20px;
+    margin-left: 3%;
     text-shadow: 4px 3px rgb(92, 95, 95);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 .weatherIcon{
     position: absolute;
     margin-left: 200px;
-    
-    top: 27%;
+    top: -5%;
     left: 0;
 }
 
 .formPos{
-   margin-top: 50px;
-   margin-left: 40px;
-   display: flex;
-   width: 374px;
+    margin-left: 1%;
+    margin-right: auto;
+    position: fixed;
+    display: flex;
+    
+    
 }
 .sub-btn{
-    background-color: #595c5a; /* Green */
+    background-color: #00000097; /* Green */
     color: white;
+    border-color: black;
     border-style: solid;
     border-width: 3px;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-family: monospace;
+    /*font-family: monospace;*/
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    
     
 }
 .cityI{
-    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-style: solid;
     border-color: black;
     border-width: 3px;
-    background-color: rgb(56, 55, 55);
+    background-color: #00000097;
     color: rgb(255, 255, 255);
-    border-radius: -5px;
-    
+    border-radius: -16px;
+    font-size: 30px;
+}
+.cityI:focus{
+    outline-width: 0;
 }
 .sub-btn:hover{
-    background-color: gainsboro;
+    background-color: rgba(246, 242, 242, 0.631);
+}
+
+.fun-fact-content{
+    text-align: center;
+    top: 5%; 
+    right: 20%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.fact-background{
+    position: fixed;
+    right: 0;
+    top: 8%;
+    margin-right: 10%;
+    height: fit-content;
+    width: 40%;
+    border-radius: 16px;
+    background-color: rgba(34, 33, 31, 0.644);
+}
+.the-fact{
+    font-family: monospace;
+    font-size: 70px;
+}
+.fact-hr{
+    width: 80%;
+}
+.the-fact-statement{
+    line-height: 2;
 }
