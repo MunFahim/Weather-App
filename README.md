@@ -1,4 +1,4 @@
-# Weather APP <p style="font-size: 20px;">version: 0.1</p>
+<h1>Weather App</h> <p style="font-size: 20px;">version: 0.1</p>
 
 ![](https://github.com/MunFahim/Weather-App/blob/master/App-Images/app-nature.JPG)
 
